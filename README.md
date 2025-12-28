@@ -15,6 +15,8 @@ Six images are placed as cards in the content area of the page which are uploade
 
 **Application Layout:** Deployment via Github pages
 
-https://mfprojects355.github.io/se_project_spots/
+https://mfprojects355.github.io/se\_project\_spots/
 
-**Video Presentation Link**
+## Project Pitch Video
+
+Check out [this video](https://drive.google.com/file/d/1dnHHcVQHToNBmPQZ1GtHL4g1ceVnQUCA/view?usp=sharing), where I describe my project and some challenges I faced while building it.
