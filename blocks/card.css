@@ -29,17 +29,18 @@
   background-image: url(../images/heart.svg);
   width: 23px;
   height: 20px;
+  padding: 0;
   border: none;
   background-color: transparent;
   opacity: 40%;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .card__like-button:hover {
   opacity: 1;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {

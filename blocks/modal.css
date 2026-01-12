@@ -1,0 +1,136 @@
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_is-opened {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.modal__container {
+  max-width: 630px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 50px;
+}
+
+.modal__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.modal__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+.modal__close-btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  opacity: 0.4;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal__close-btn:focus{
+ opacity: 0.85;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  color: rgba(33, 33, 33, 0.7);
+}
+
+.modal__input {
+  max-width: 630px;
+  border-radius: 8px;
+  font-size: 20px;
+  line-height: 1;
+  padding: 16px 12px;
+  margin-top: 8px;
+  border: 1px solid rgba(33, 33, 33, 0.4);
+}
+
+.modal__input::placeholder {
+  color: rgba(33, 33, 33, 0.3);
+}
+
+.modal__submit-btn {
+  margin-right: auto;
+  background-color: black;
+  color: rgba(252, 245, 229, 1);
+  border: none;
+  border-radius: 8px;
+  padding: 18px 58px;
+  height: 52px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal__submit-btn:hover{
+  background-color: #333;
+}
+@media screen and (max-width: 750px) {
+  .modal {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .modal__container {
+    max-width: 276px;
+    padding: 12px;
+  }
+
+  .modal__row {
+    padding-bottom: 24px;
+  }
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__form {
+    gap: 24px;
+  }
+
+  .modal__input {
+    max-width: 276px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 16px 12px;
+    margin-top: 8px;
+  }
+
+  .modal__submit-btn {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+}
