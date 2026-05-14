@@ -136,21 +136,23 @@ function handleAddPostSubmit(event) {
 
 addPostForm.addEventListener("submit", handleAddPostSubmit);
 
+function closeModalByEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
-
-  const closeModalByEscapeKey = (evt) => {
-    if (evt.key == "Escape") {
-      closeModal(modal);
-      document.removeEventListener("keydown", closeModalByEscapeKey);
-    }
-  };
-
   document.addEventListener("keydown", closeModalByEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", closeModalByEscapeKey);
 }
 
 const cardTemplateElement = document
